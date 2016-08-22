@@ -1,0 +1,7 @@
+<ul>
+  {{#each tickets as |ticket|}}
+    <li>{{ticket.name}}<br>{{ticket.location}}<br>{{ticket.description}}<br>{{ticket.timestamp}}</li>
+    <button {{action 'destroyTicket' ticket}}>Remove Ticket</button>
+  {{/each}}
+
+</ul>
