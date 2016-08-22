@@ -23,7 +23,9 @@ export default Ember.Component.extend({
         name: this.get('name'),
         location: this.get('location'),
         description: this.get('description'),
-        timestap: Date.now()
+        timestap: Date.now(),
+        active: true,
+        wait: 0
       };
       this.set('questionForm', false);
       this.sendAction('save1',params);

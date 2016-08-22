@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
   actions: {
     destroyTicket(ticket){
-      return ticket.destroyRecord();
-    };
+      ticket.destroyRecord();
+      }
     }
 });
